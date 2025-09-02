@@ -74,12 +74,14 @@ LeetCode/
       455. Assign Cookies.cpp
       561. Array Partition.cpp
       605. Can Place Flowers.cpp
+      680. Valid Palindrome II.cpp
 
       output/
         409. Longest Palindrome.exe
         455. Assign Cookies.exe
         561. Array Partition.exe
         605. Can Place Flowers.exe
+        680. Valid Palindrome II.exe
 ```
 
 ## Compiling and Running

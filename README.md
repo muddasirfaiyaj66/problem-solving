@@ -78,6 +78,7 @@ LeetCode/
       860. Lemonade Change.cpp
       942. DI String Match.cpp
       976. Largest Perimeter Triangle.cpp
+      1005. Maximize Sum Of Array After K Negations.cpp
 
       output/
         409. Longest Palindrome.exe
@@ -88,6 +89,7 @@ LeetCode/
         860. Lemonade Change.exe
         942. DI String Match.exe
         976. Largest Perimeter Triangle.exe
+        1005. Maximize Sum Of Array After K Negations.exe
 ```
 
 ## Compiling and Running

@@ -75,6 +75,7 @@ LeetCode/
       561. Array Partition.cpp
       605. Can Place Flowers.cpp
       680. Valid Palindrome II.cpp
+      860. Lemonade Change.cpp
 
       output/
         409. Longest Palindrome.exe
@@ -82,6 +83,7 @@ LeetCode/
         561. Array Partition.exe
         605. Can Place Flowers.exe
         680. Valid Palindrome II.exe
+        860. Lemonade Change.exe
 ```
 
 ## Compiling and Running

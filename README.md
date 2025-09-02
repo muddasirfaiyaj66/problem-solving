@@ -77,6 +77,7 @@ LeetCode/
       680. Valid Palindrome II.cpp
       860. Lemonade Change.cpp
       942. DI String Match.cpp
+      976. Largest Perimeter Triangle.cpp
 
       output/
         409. Longest Palindrome.exe
@@ -86,6 +87,7 @@ LeetCode/
         680. Valid Palindrome II.exe
         860. Lemonade Change.exe
         942. DI String Match.exe
+        976. Largest Perimeter Triangle.exe
 ```
 
 ## Compiling and Running

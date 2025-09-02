@@ -42,50 +42,6 @@ or simply
 my_program
 ```
 
-## Compilation and Execution
-
-### 1. Compilation
-
-Open a terminal or command prompt and navigate to the directory where your C++ source file (e.g., `my_program.cpp`) is located.
-
-#### Using GCC/G++ (Linux/macOS/Windows with MinGW or Cygwin)
-
-```
-g++ my_program.cpp -o my_program
-```
-
-This command compiles `my_program.cpp` and creates an executable named `my_program` (or `my_program.exe` on Windows).
-
-#### Using MSVC (Windows, Developer Command Prompt)
-
-```
-cl /EHsc my_program.cpp
-```
-
-This compiles `my_program.cpp` and creates `my_program.exe`.
-
-### 2. Execution
-
-After successful compilation, run the generated executable from the same terminal or command prompt.
-
-#### On Linux/macOS
-
-```
-./my_program
-```
-
-#### On Windows
-
-```
-my_program.exe
-```
-
-or simply
-
-```
-my_program
-```
-
 # LeetCode Problem Solving
 
 This is my personal repository containing solutions to various LeetCode problems, organized by topic and difficulty.
@@ -94,7 +50,7 @@ This is my personal repository containing solutions to various LeetCode problems
 
 - `LeetCode/Greedy/Easy/` — Solutions to easy greedy problems.
 - `LeetCode/Greedy/Easy/output/` — Compiled executables for easy greedy problems.
-- `LeetCode/Greedy/Easy/output/` — Compiled executables for easy greedy problems.
+
 
 ## Language Support
 
@@ -117,10 +73,13 @@ LeetCode/
       409. Longest Palindrome.cpp
       455. Assign Cookies.cpp
       561. Array Partition.cpp
+      605. Can Place Flowers.cpp
+
       output/
         409. Longest Palindrome.exe
         455. Assign Cookies.exe
         561. Array Partition.exe
+        605. Can Place Flowers.exe
 ```
 
 ## Compiling and Running
@@ -158,8 +117,6 @@ Navigate to the `output` folder and run:
 You can also use CodeBlocks or any C++ IDE to compile and run the files. Set the output directory to `output` for consistency.
 
 ## Note
-
-This repository is for my personal use and reference. Feel free to browse and use the solutions for learning purposes.
 This repository is for my personal use and reference. Feel free to browse and use the solutions for learning purposes.
 
 ## License

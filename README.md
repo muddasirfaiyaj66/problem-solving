@@ -76,6 +76,7 @@ LeetCode/
       605. Can Place Flowers.cpp
       680. Valid Palindrome II.cpp
       860. Lemonade Change.cpp
+      942. DI String Match.cpp
 
       output/
         409. Longest Palindrome.exe
@@ -84,6 +85,7 @@ LeetCode/
         605. Can Place Flowers.exe
         680. Valid Palindrome II.exe
         860. Lemonade Change.exe
+        942. DI String Match.exe
 ```
 
 ## Compiling and Running

@@ -79,6 +79,7 @@ LeetCode/
       942. DI String Match.cpp
       976. Largest Perimeter Triangle.cpp
       1005. Maximize Sum Of Array After K Negations.cpp
+      1013. Partition Array Into Three Parts With Equal Sum.cpp
 
       output/
         409. Longest Palindrome.exe
@@ -90,6 +91,7 @@ LeetCode/
         942. DI String Match.exe
         976. Largest Perimeter Triangle.exe
         1005. Maximize Sum Of Array After K Negations.exe
+        1013. Partition Array Into Three Parts With Equal Sum.exe
 ```
 
 ## Compiling and Running

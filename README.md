@@ -80,6 +80,7 @@ LeetCode/
       976. Largest Perimeter Triangle.cpp
       1005. Maximize Sum Of Array After K Negations.cpp
       1013. Partition Array Into Three Parts With Equal Sum.cpp
+      1217. Minimum Cost to Move Chips to The Same Position.cpp
 
       output/
         409. Longest Palindrome.exe
@@ -92,6 +93,7 @@ LeetCode/
         976. Largest Perimeter Triangle.exe
         1005. Maximize Sum Of Array After K Negations.exe
         1013. Partition Array Into Three Parts With Equal Sum.exe
+        1217. Minimum Cost to Move Chips to The Same Position.exe
 ```
 
 ## Compiling and Running

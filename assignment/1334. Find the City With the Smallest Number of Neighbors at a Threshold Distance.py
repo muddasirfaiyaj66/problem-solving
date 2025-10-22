@@ -1,76 +1,90 @@
 
 # #  using Dijkstra Algorithm
 
-# import heapq
-# from collections import defaultdict
+from collections import defaultdict
 
-# class Solution(object):
-#     def findTheCity(self, n, edges, distanceThreshold):
-#         adj = defaultdict(list)
-#         for v1, v2, dist in edges:
-#             adj[v1].append((v2, dist))
-#             adj[v2].append((v1, dist))
+class Solution(object):
+    def findTheCity(self, n, edges, distanceThreshold):
         
-#         def dijkstra(src):
-#             heap = [(0, src)]
-#             dist = [float('inf')] * n
-#             dist[src] = 0
+        adj = defaultdict(list)
+        for u, v, w in edges:
+            adj[u].append((v, w))
+            adj[v].append((u, w))
 
-#             while heap:
-#                 cur_dist, node = heapq.heappop(heap)
-#                 for nei, w in adj[node]:
-#                     if dist[nei] > cur_dist + w:
-#                         dist[nei] = cur_dist + w
-#                         heapq.heappush(heap, (dist[nei], nei))
+        def dijkstra(src):
+            dist = [float('inf')] * n
+            visited = [False] * n
+            dist[src] = 0
+
+            for _ in range(n):
+                
+                u = -1
+                min_dist = float('inf')
+                for i in range(n):
+                    if not visited[i] and dist[i] < min_dist:
+                        min_dist = dist[i]
+                        u = i
+
+                if u == -1:
+                    break  
+
+                visited[u] = True
+
+                
+                for v, w in adj[u]:
+                    if not visited[v] and dist[u] + w < dist[v]:
+                        dist[v] = dist[u] + w
+
             
-#             return sum(1 for d in dist if 0 < d <= distanceThreshold)
+            return sum(1 for i in range(n) if i != src and dist[i] <= distanceThreshold)
 
-#         res, min_count = -1, n
-#         for src in range(n):
-#             count = dijkstra(src)
-            
-#             if count <= min_count:
-#                 res = src
-#                 min_count = count
+       
+        min_count = n
+        result = -1
 
-#         return res
+        for i in range(n):
+            count = dijkstra(i)
+            if count <= min_count:
+                min_count = count
+                result = i  
+        return result
 
 
 # Using Floyd-Warshall Algorithm
 
 
-class Solution(object):
-    def findTheCity(self, n, edges, distanceThreshold):
+# class Solution(object):
+#     def findTheCity(self, n, edges, distanceThreshold):
         
-        dist = [[float('inf')] * n for _ in range(n)]
+#         dist = [[float('inf')] * n for _ in range(n)]
 
-        for i in range(n):
-            dist[i][i] = 0
+#         for i in range(n):
+#             dist[i][i] = 0
 
-        for u, v, w in edges:
-            dist[u][v] = w
-            dist[v][u] = w
+#         for u, v, w in edges:
+#             dist[u][v] = w
+#             dist[v][u] = w
 
-        for k in range(n):
-            for i in range(n):
-                for j in range(n):
-                    if dist[i][k] + dist[k][j] < dist[i][j]:
-                        dist[i][j] = dist[i][k] + dist[k][j]
+#         for k in range(n):
+#             for i in range(n):
+#                 for j in range(n):
+#                     if dist[i][k] + dist[k][j] < dist[i][j]:
+#                         dist[i][j] = dist[i][k] + dist[k][j]
                         
-        min_count = n
-        result = -1
+#         min_count = n
+#         result = -1
 
-        for i in range(n):
-            count = 0
-            for j in range(n):
-                if i != j and dist[i][j] <= distanceThreshold:
-                    count += 1
+#         for i in range(n):
+#             count = 0
+#             for j in range(n):
+#                 if i != j and dist[i][j] <= distanceThreshold:
+#                     count += 1
 
-            if count <= min_count:
-                min_count = count
-                result = i
+#             if count <= min_count:
+#                 min_count = count
+#                 result = i
 
-        return result
+#         return result
 
 
 
